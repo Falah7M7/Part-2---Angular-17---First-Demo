@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstApp';
+
+  public currentRoute:any;
+
+  constructor(private router:Router) {
+    this.currentRoute="home"
+     this.router.navigateByUrl("/home")
+  }
+
+  gotoHome() {
+    this.currentRoute="products";
+    this.router.navigateByUrl("/products")
+
+
+  }
+
+  gotoProducts() {
+
+  }
 }

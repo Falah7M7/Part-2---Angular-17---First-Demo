@@ -95,12 +95,16 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/app/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css/bootstrap.min.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b7a93fb8-18ca-4322-8da7-d0528d94dd16"
   }
 }
